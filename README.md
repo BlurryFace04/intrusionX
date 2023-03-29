@@ -1,6 +1,6 @@
 # intrusionX
 Welcome to intrusionX, a project that showcases the power of Python in the realm of cybersecurity. This repository contains two Python scripts designed to
-demonstrate the implementation of a net-cat based reverse shell. Dive into the world of secure connections, remote access, and advanced networking techniques. Explore
+demonstrate the implementation of a netcat based reverse shell. Dive into the world of secure connections, remote access, and advanced networking techniques. Explore
 the intricacies of sockets, subprocesses, and threading as you navigate through this captivating project. Get ready to be amazed by the limitless possibilities that
 Python and cybersecurity have to offer!
 
