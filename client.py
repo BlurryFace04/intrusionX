@@ -57,7 +57,7 @@ def manage_connection(target_ip, target_port):
 
 
 def main():
-    target_ip = '143.110.180.158'
+    target_ip = 'SERVER_IP'  # Replace 'SERVER_IP' with the IP address of your server
     target_port = 4242
 
     manage_connection(target_ip, target_port)
